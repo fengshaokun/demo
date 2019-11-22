@@ -1,7 +1,12 @@
 package com.yikun.demo.po;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 
 public class Account {
+
     private int id ;
     private String name ;
     private double money;

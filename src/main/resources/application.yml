@@ -9,11 +9,30 @@ my:
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/test?useUnicode=true$characterEncoding=utf8&serverTimezone=UTC
+    url: jdbc:mysql://139.224.54.41:3306/test?useUnicode=true$characterEncoding=utf8&serverTimezone=UTC
     username: root
-    password: 1234
+    password: xiaokk0218
+
+  redis:
+    host: 139.224.54.41
+    port: 6379
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 500
+        min-idle: 0
+      lettuce:
+        shutdown-timeout: 0
 server:
   port: 8080
-  # 下面这个参数是为解决问题而新增的
-  tomcat:
-    max-http-header-size: 8192
+
+mybatis:
+ mapper-locations: classpath:mybatis/*.xml
+ type-aliases-package: com.yikun.demo.po
+
+logging:
+  level:
+    com.yikun.demo.mapper: debug
+
+
