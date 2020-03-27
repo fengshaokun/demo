@@ -1,16 +1,11 @@
 package com.yikun.demo;
 
-import java.awt.*;
-import java.io.IOException;
-import java.net.URI;
 
-public class StringTest {
+import net.minidev.json.writer.BeansMapper;
+import org.springframework.context.annotation.Bean;
 
-    public static void main(String[] args) {
-        B b = new B ();
-        B a = new A ();
-        String asd = b.create("asd");
-        System.out.println(asd);
-    }
+public class StringTest   {
+
+
 
 }

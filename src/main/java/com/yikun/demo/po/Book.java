@@ -4,6 +4,7 @@ package com.yikun.demo.po;
  * Created by fangzhipeng on 2017/4/17.
  */
 public class Book {
+
     private long id;
     private String name;
     private double price;
@@ -31,4 +32,5 @@ public class Book {
     public void setPrice(double price) {
         this.price = price;
     }
+
 }

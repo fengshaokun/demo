@@ -22,4 +22,21 @@ public class AccountMapperServiceImpl implements AcountMapperService {
     public List<Account> list() {
         return accountMapper.selectAll();
     }
+
+    @Override
+    public void addAccount(Account account) {
+        accountMapper.addAccount(account);
+    }
+
+    @Override
+    public List<Account> selectAllById(List<String> accounts) {
+
+        return accountMapper.selectAllById(accounts);
+    }
+
+    @Override
+    public List<Account> selectAllById2(String id) {
+
+        return accountMapper.selectAllById2(id);
+    }
 }

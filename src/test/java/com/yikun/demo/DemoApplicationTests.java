@@ -13,6 +13,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 class DemoApplicationTests {
 
+/*
 
     public static Logger logger= LoggerFactory.getLogger(DemoApplicationTests.class);
 
@@ -30,5 +31,6 @@ class DemoApplicationTests {
         logger.info(redisDao.getValue("name"));
         logger.info(redisDao.getValue("age"));
     }
+*/
 
 }

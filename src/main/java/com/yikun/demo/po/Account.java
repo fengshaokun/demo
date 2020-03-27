@@ -11,6 +11,21 @@ public class Account {
     private String name ;
     private double money;
 
+    @Override
+    public String toString() {
+        return "Account{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", money=" + money +
+                '}';
+    }
+
+    public Account(int id, String name, double money) {
+        this.id = id;
+        this.name = name;
+        this.money = money;
+    }
+
     public int getId() {
         return id;
     }
