@@ -7,6 +7,8 @@ my:
   value: ${random.value}
   greeting: hi,i'm  ${my.name}
 spring:
+  thymeleaf:
+    prefix: classpath:/templates/
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://139.224.54.41:3306/test?useUnicode=true$characterEncoding=utf8&serverTimezone=UTC
